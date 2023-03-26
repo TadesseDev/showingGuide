@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 const SidebarComponent = styled.div`
-  width: 40vw;
   min-width: max-content;
-  max-width: 300px;
   background-color: white;
   padding: 2vh 0;
   min-height: calc(100vh - 65px);

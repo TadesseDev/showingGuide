@@ -29,6 +29,11 @@ html,body{
 
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
         .icon {
           width: 20px;
           margin: 5px;

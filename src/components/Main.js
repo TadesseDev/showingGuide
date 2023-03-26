@@ -1,20 +1,19 @@
 import React, { useContext } from "react";
-import MainComponent from "./styled/main.styled";
-import iconsContext from "../context/iconsContext";
+import MainComponent, { Carousels } from "./styled/main.styled";
 import TopNavigation from "./TopNavigation";
+import picture_1 from "../resources/images/pictures/picture_1.png";
+import picture_2 from "../resources/images/pictures/picture_2.png";
+import picture_3 from "../resources/images/pictures/picture_3.png";
 export default function Main() {
-  const {
-    arrow_back,
-    arrow_down,
-    notifications,
-    search,
-    setting,
-    logout,
-    user,
-  } = useContext(iconsContext);
+  const pictures = [picture_1, picture_2, picture_3];
   return (
-      <MainComponent>
-          <TopNavigation />
+    <MainComponent>
+      <TopNavigation />
+      <Carousels>
+        {pictures.map((picture, index) =>
+          <img src={picture} alt={"picture_ " + index} />
+        )}
+      </Carousels>
     </MainComponent>
   );
 }
