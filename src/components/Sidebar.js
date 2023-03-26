@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import SidebarComponent from "./styled/sidebar.styled";
 import iconsContext from "../context/iconsContext";
 export default function SideBar() {

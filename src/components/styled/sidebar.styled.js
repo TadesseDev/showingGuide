@@ -5,7 +5,7 @@ const SidebarComponent = styled.div`
   min-width: max-content;
   max-width: 300px;
   background-color: white;
-  padding: 20px 0;
+  padding: 2vh 0;
   min-height: calc(100vh - 65px);
   #content-container {
     border: 2px #9747ff dashed;
@@ -16,9 +16,8 @@ const SidebarComponent = styled.div`
       margin: 0;
       list-style: none;
       li {
-        border: 1px solid transparent;
         &:hover {
-          border: 1px solid #2e6ef6;
+          box-shadow: 0 0 10px silver;
         }
         a {
           padding: 10px;
@@ -35,7 +34,7 @@ const SidebarComponent = styled.div`
   }
   #bar {
     height: 40px;
-    background: #2e6ef6;
+    background: var(--secondary-color);
     margin: 10px 0;
     border-radius: 5px;
   }

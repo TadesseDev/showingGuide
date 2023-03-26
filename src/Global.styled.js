@@ -22,6 +22,13 @@ html,body{
   font-family: Gilroy_Light;
 }
 
+:root{
+  --primary-color: #f5f6fa;
+  --secondary-color: #2e6ef6;
+  --blur: silver;
+
+}
+
         .icon {
           width: 20px;
           margin: 5px;
