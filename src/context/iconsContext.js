@@ -23,11 +23,11 @@ import sms from "../resources/images/sms.svg";
 import turkey from "../resources/images/turkey.svg";
 import view_on_map from "../resources/images/view_on_map.svg";
 
-import _1_176_sq_ft from "../resources/images/_1_176_sq_ft.svg";
-import _1_963_sq_ft from "../resources/images/_1_963_sq_ft.svg";
-import _2_bathrooms from "../resources/images/_2_bathrooms.svg";
-import _2_garage from "../resources/images/_2_garage.svg";
-import _3_bedrooms from "../resources/images/_3_bedrooms.svg";
+import $1_176_sq_ft from "../resources/images/_1_176_sq_ft.svg";
+import $1_963_sq_ft from "../resources/images/_1_963_sq_ft.svg";
+import $2_bathrooms from "../resources/images/_2_bathrooms.svg";
+import $2_garage from "../resources/images/_2_garage.svg";
+import $3_bedrooms from "../resources/images/_3_bedrooms.svg";
 import apartment from "../resources/images/apartment.svg";
 
 const IconsContainer = createContext();
@@ -56,11 +56,11 @@ export const icons = {
   turkey,
   view_on_map,
 
-  _1_176_sq_ft,
-  _1_963_sq_ft,
-  _2_bathrooms,
-  _2_garage,
-  _3_bedrooms,
+  $1_176_sq_ft,
+  $1_963_sq_ft,
+  $2_bathrooms,
+  $2_garage,
+  $3_bedrooms,
   apartment,
 };
 export default IconsContainer;

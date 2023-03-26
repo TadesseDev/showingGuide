@@ -16,11 +16,11 @@ export default function Main() {
     my_note,
     turkey,
     sms,
-    _1_176_sq_ft,
-    _1_963_sq_ft,
-    _2_bathrooms,
-    _2_garage,
-    _3_bedrooms,
+    $1_176_sq_ft,
+    $1_963_sq_ft,
+    $2_bathrooms,
+    $2_garage,
+    $3_bedrooms,
     apartment,
   } = useContext(iconsContext);
   return (
@@ -102,31 +102,31 @@ export default function Main() {
               </li>
               <li>
                 <a>
-                  <img src={_3_bedrooms} alt="" className="icon" />
+                  <img src={$3_bedrooms} alt="" className="icon" />
                   <p className="text">3 Bedrooms</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <img src={_2_bathrooms} alt="" className="icon" />
+                  <img src={$2_bathrooms} alt="" className="icon" />
                   <p className="text">2 Bathrooms</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <img src={_2_garage} alt="" className="icon" />
+                  <img src={$2_garage} alt="" className="icon" />
                   <p className="text">2 Garage</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <img src={_1_963_sq_ft} alt="" className="icon" />
+                  <img src={$1_963_sq_ft} alt="" className="icon" />
                   <p className="text">1,963 sq. ft.</p>
                 </a>
               </li>
               <li>
                 <a>
-                  <img src={_1_176_sq_ft} alt="" className="icon" />
+                  <img src={$1_176_sq_ft} alt="" className="icon" />
                   <p className="text">1,176 sq. ft.</p>
                 </a>
               </li>
