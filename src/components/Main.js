@@ -97,37 +97,37 @@ export default function Main() {
               <li>
                 <a>
                   <img src={apartment} alt="" className="icon" />
-                  <span className="text">Apartment</span>
+                  <p className="text">Apartment</p>
                 </a>
               </li>
               <li>
                 <a>
                   <img src={_3_bedrooms} alt="" className="icon" />
-                  <span className="text">3 Bedrooms</span>
+                  <p className="text">3 Bedrooms</p>
                 </a>
               </li>
               <li>
                 <a>
                   <img src={_2_bathrooms} alt="" className="icon" />
-                  <span className="text">2 Bathrooms</span>
+                  <p className="text">2 Bathrooms</p>
                 </a>
               </li>
               <li>
                 <a>
                   <img src={_2_garage} alt="" className="icon" />
-                  <span className="text">2 Garage</span>
+                  <p className="text">2 Garage</p>
                 </a>
               </li>
               <li>
                 <a>
                   <img src={_1_963_sq_ft} alt="" className="icon" />
-                  <span className="text">1,963 sq. ft.</span>
+                  <p className="text">1,963 sq. ft.</p>
                 </a>
               </li>
               <li>
                 <a>
                   <img src={_1_176_sq_ft} alt="" className="icon" />
-                  <span className="text">1,176 sq. ft.</span>
+                  <p className="text">1,176 sq. ft.</p>
                 </a>
               </li>
             </ul>

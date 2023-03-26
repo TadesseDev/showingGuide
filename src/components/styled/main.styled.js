@@ -48,18 +48,19 @@ export const Content = styled.div`
 
   .middle {
     background-color: transparent;
-
     > * {
       background-color: #ffffff;
+      border-radius: 10px;
       padding: 10px;
     }
     .top {
+      margin-bottom: 20px;
       ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
         font-size: 0.8rem;
-        strong{
+        strong {
           margin-right: 10px;
         }
         a {
@@ -67,7 +68,7 @@ export const Content = styled.div`
           flex-direction: column;
           align-items: center;
           color: var(--blur);
-          .icon{
+          .icon {
             margin-bottom: 5px;
           }
         }
@@ -76,7 +77,7 @@ export const Content = styled.div`
   }
   .left {
     li {
-      border: 1px solid var(--blur);
+      border: 1px solid var(--blur2);
       margin: 2px;
       margin: 5px;
       &:hover {
