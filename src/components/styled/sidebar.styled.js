@@ -10,9 +10,6 @@ const SidebarComponent = styled.div`
     margin-left: 10px;
     padding: 5px;
     ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
       li {
         &:hover {
           box-shadow: 0 0 10px silver;

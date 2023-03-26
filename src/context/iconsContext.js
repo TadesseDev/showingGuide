@@ -15,6 +15,13 @@ import logout from "../resources/images/logout.svg";
 import search from "../resources/images/search.svg";
 import setting from "../resources/images/setting.svg";
 
+import get_directions from "../resources/images/get_directions.svg";
+import my_note from "../resources/images/my_note.svg";
+import share from "../resources/images/share.svg";
+import sms from "../resources/images/sms.svg";
+import turkey from "../resources/images/turkey.svg";
+import view_on_map from "../resources/images/view_on_map.svg";
+
 const IconsContainer = createContext();
 export const icons = {
   sidebar_icon,
@@ -32,5 +39,12 @@ export const icons = {
   notifications,
   search_property,
   help_desk,
+
+  get_directions,
+  my_note,
+  share,
+  sms,
+  turkey,
+  view_on_map,
 };
 export default IconsContainer;

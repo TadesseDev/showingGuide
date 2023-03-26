@@ -10,12 +10,12 @@ export default function Main() {
   const {
     arrow_back,
     arrow_next,
-    arrow_down,
-    notifications,
-    search,
-    setting,
-    logout,
-    user,
+    view_on_map,
+    get_directions,
+    share,
+    my_note,
+    turkey,
+    sms,
   } = useContext(iconsContext);
   return (
     <MainComponent>
@@ -36,51 +36,51 @@ export default function Main() {
           className="next-picture arrow"
         />
       </Carousels>
-      <Content>
+      <Content className="container">
         <div className="left">
           <div>
-            <button>For Sale</button>
+            <button class="active">For Sale</button>
             <button>Add List</button>
           </div>
           <strong>MSL#: E5579076 </strong>
-          <p>
-            listed for: <em>$1,549,586</em>
+          <p className="blur-text">
+            listed for: <span>$1,549,586</span>
           </p>
           <ul>
             <li>
               <a>
-                <img src={arrow_back} alt="" className="icon" />
+                <img src={view_on_map} alt="" className="icon" />
                 <span className="text">View on map</span>
               </a>
             </li>
             <li>
               <a>
-                <img src={arrow_back} alt="" className="icon" />
+                <img src={get_directions} alt="" className="icon" />
                 <span className="text">Get Direction</span>
               </a>
             </li>
             <li>
               <a>
-                <img src={arrow_back} alt="" className="icon" />
+                <img src={share} alt="" className="icon" />
                 <span className="text">Share</span>
               </a>
             </li>
             <li>
               <a>
-                <img src={arrow_back} alt="" className="icon" />
+                <img src={my_note} alt="" className="icon" />
                 <span className="text">My Notes</span>
               </a>
             </li>
           </ul>
           <div class="listing">
-            <span>Listing Agent</span>
-            <p>Courtney Henry</p>
+            <small>Listing Agent</small>
+            <small>Courtney Henry</small>
             <div className="phone-number">
               <span>
-                <img src={arrow_back} alt="" className="icon" />
-                +905524898277
+                <img src={turkey} alt="" className="icon" />
+                <small>+905524898277</small>
               </span>
-              <img src={arrow_back} alt="" className="icon" />
+              <img src={sms} alt="" className="icon" />
             </div>
           </div>
         </div>

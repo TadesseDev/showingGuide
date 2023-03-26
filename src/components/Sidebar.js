@@ -14,7 +14,7 @@ export default function SideBar() {
   } = useContext(iconsContext);
   return (
     <SidebarComponent>
-      <div  id="top-sidebar">
+      <div id="top-sidebar">
         <div id="sidebar-icon">
           <img src={sidebar_icon} alt="" />
         </div>
@@ -23,73 +23,73 @@ export default function SideBar() {
       <div id="content-container">
         <ul>
           <li>
-            <a>
+            <a href="#">
               <img src={dashboard} alt="" className="icon" />
               <span className="text">Dashboard</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={search_property} alt="" className="icon" />
               <span className="text">Search Property</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={calendar} alt="" className="icon" />
               <span className="text">Calendar</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={my_client} alt="" className="icon" />
               <span className="text">My Clients</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={msl_list} alt="" className="icon" />
               <span className="text">MSL Lists</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={notifications} alt="" className="icon" />
               <span className="text">Notifications</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={dashboard} alt="" className="icon" />
               <span className="text">Dashboard</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={search_property} alt="" className="icon" />
               <span className="text">Search Property</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={calendar} alt="" className="icon" />
               <span className="text">Calendar</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={my_client} alt="" className="icon" />
               <span className="text">My Clients</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={msl_list} alt="" className="icon" />
               <span className="text">MSL Lists</span>
             </a>
           </li>
           <li>
-            <a>
+            <a href="#">
               <img src={notifications} alt="" className="icon" />
               <span className="text">Notifications</span>
             </a>

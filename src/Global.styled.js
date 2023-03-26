@@ -26,9 +26,17 @@ html,body{
   --primary-color: #f5f6fa;
   --secondary-color: #2e6ef6;
   --blur: silver;
+  --blur2: #d3cdcd75;
+  --green: #5EB182;
+  --green_0-5: #42a3872b;
 
 }
 
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      }
 a{
   text-decoration: none;
   color: black;
