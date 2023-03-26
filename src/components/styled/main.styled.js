@@ -4,23 +4,6 @@ const MainComponent = styled.div`
   padding: 2vw 0;
   flex-grow: 1;
   max-width: fill-available;
-
-  li {
-    border: 1px solid var(--blur);
-    margin: 2px;
-    &:hover {
-      box-shadow: 0 0 10px silver;
-    }
-    a {
-      padding: 10px;
-      margin: 5px;
-      display: flex;
-      align-items: center;
-    }
-  }
-  .container {
-    background-color: #ffffff;
-  }
 `;
 export const Carousels = styled.div`
   margin: 20px 0;
@@ -55,8 +38,57 @@ export const Carousels = styled.div`
 `;
 
 export const Content = styled.div`
-width: max-content;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 22% 55% 22%;
+  justify-content: space-between;
+  > * {
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  .middle {
+    background-color: transparent;
+
+    > * {
+      background-color: #ffffff;
+      padding: 10px;
+    }
+    .top {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.8rem;
+        strong{
+          margin-right: 10px;
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: var(--blur);
+          .icon{
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .left {
+    li {
+      border: 1px solid var(--blur);
+      margin: 2px;
+      margin: 5px;
+      &:hover {
+        box-shadow: 0 0 10px silver;
+      }
+      a {
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
   .blur-text {
     color: var(--blur);
     span {
@@ -82,6 +114,9 @@ width: max-content;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    .blur {
+      color: var(--blur);
+    }
     span {
       display: inline-flex;
       align-items: center;

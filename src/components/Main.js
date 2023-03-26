@@ -16,6 +16,12 @@ export default function Main() {
     my_note,
     turkey,
     sms,
+    _1_176_sq_ft,
+    _1_963_sq_ft,
+    _2_bathrooms,
+    _2_garage,
+    _3_bedrooms,
+    apartment,
   } = useContext(iconsContext);
   return (
     <MainComponent>
@@ -36,7 +42,7 @@ export default function Main() {
           className="next-picture arrow"
         />
       </Carousels>
-      <Content className="container">
+      <Content>
         <div className="left">
           <div>
             <button class="active">For Sale</button>
@@ -73,7 +79,7 @@ export default function Main() {
             </li>
           </ul>
           <div class="listing">
-            <small>Listing Agent</small>
+            <small className="blur">Listing Agent</small>
             <small>Courtney Henry</small>
             <div className="phone-number">
               <span>
@@ -84,9 +90,54 @@ export default function Main() {
             </div>
           </div>
         </div>
-        <div className="middle"></div>
+        <div className="middle">
+          <div className="top">
+            <ul>
+              <strong>Property Details</strong>
+              <li>
+                <a>
+                  <img src={apartment} alt="" className="icon" />
+                  <span className="text">Apartment</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src={_3_bedrooms} alt="" className="icon" />
+                  <span className="text">3 Bedrooms</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src={_2_bathrooms} alt="" className="icon" />
+                  <span className="text">2 Bathrooms</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src={_2_garage} alt="" className="icon" />
+                  <span className="text">2 Garage</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src={_1_963_sq_ft} alt="" className="icon" />
+                  <span className="text">1,963 sq. ft.</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src={_1_176_sq_ft} alt="" className="icon" />
+                  <span className="text">1,176 sq. ft.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="bottom"></div>
+        </div>
         <div className="right"></div>
       </Content>
+
+      <Content></Content>
     </MainComponent>
   );
 }

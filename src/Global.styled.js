@@ -18,14 +18,13 @@ html,body{
   padding: 0;
 }
 #root{
-  margin-top: 25px;
   font-family: Gilroy_Light;
 }
 
 :root{
   --primary-color: #f5f6fa;
   --secondary-color: #2e6ef6;
-  --blur: silver;
+  --blur: #838181;
   --blur2: #d3cdcd75;
   --green: #5EB182;
   --green_0-5: #42a3872b;

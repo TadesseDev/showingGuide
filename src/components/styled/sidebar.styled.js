@@ -3,11 +3,10 @@ import styled from "styled-components";
 const SidebarComponent = styled.div`
   min-width: max-content;
   background-color: white;
-  padding: 2vh 0;
-  min-height: calc(100vh - 65px);
+  padding: 2vh 5px;
+  height: max-content;
   #content-container {
-    border: 2px #9747ff dashed;
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 5px;
     ul {
       li {
@@ -21,6 +20,7 @@ const SidebarComponent = styled.div`
           align-items: center;
         }
       }
+      margin-bottom: 100px;
     }
   }
   #top-sidebar {
