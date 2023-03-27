@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SidebarComponent = styled.div`
   min-width: max-content;
   background-color: white;
-  padding: 2vh 5px;
+  padding: 5vh 5px;
   height: max-content;
   #content-container {
     margin-left: 5px;
@@ -11,7 +11,7 @@ const SidebarComponent = styled.div`
     ul {
       li {
         &:hover {
-          box-shadow: 0 0 10px silver;
+          box-shadow: 0 0 10px var(--blur2);
         }
         a {
           padding: 10px;
@@ -20,7 +20,7 @@ const SidebarComponent = styled.div`
           align-items: center;
         }
       }
-      margin-bottom: 100px;
+      margin-bottom: 15vh;
     }
   }
   #top-sidebar {

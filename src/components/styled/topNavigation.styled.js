@@ -29,8 +29,16 @@ const TopNavigationComponent = styled.div`
     display: flex;
     align-items: center;
     gap: 1vw;
-    p {
-      font-size: 1.5vw;
+    h4 {
+      font-size: 1.2vw;
+      font-weight: normal;
+      margin: 0;
+    }
+    .back{
+      height: 40px;
+      img{
+        height: 100%;
+      }
     }
   }
   .userDetail {

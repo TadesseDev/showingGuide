@@ -9,7 +9,8 @@ export const Carousels = styled.div`
   margin: 20px 0;
   display: flex;
   overflow: scroll;
-  height: 250px;
+  height: 20vw;
+  max-height: 400px;
   position: relative;
   img {
     height: 100%;
@@ -39,19 +40,22 @@ export const Carousels = styled.div`
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 22% 55% 22%;
+  grid-template-columns: 20% 60% 20%;
   justify-content: space-between;
+  font-size: 0.8rem;
   > * {
     padding: 10px;
     background-color: #ffffff;
+    border-radius: 5px;
   }
 
   .middle {
     background-color: transparent;
+    padding-top: 0;
     > * {
       background-color: #ffffff;
-      border-radius: 10px;
       padding: 10px;
+      border-radius: 5px;
     }
     .top {
       margin-bottom: 20px;
@@ -70,18 +74,60 @@ export const Content = styled.div`
           color: var(--blur);
           .icon {
             margin-bottom: 5px;
+            width: 30px;
           }
+        }
+      }
+    }
+    .bottom {
+      padding: 0px;
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--blur2);
+        li {
+          flex-grow: 1;
+          &:first-child {
+            border-bottom: 4px solid var(--secondary-color);
+          }
+        }
+        a {
+          display: block;
+          text-align: center;
+          width: 100%;
+          padding: 20px 0;
+        }
+      }
+      .content {
+        padding: 15px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid var(--blur2);
+          padding: 10px 0;
+        }
+        a {
+          color: var(--secondary-color);
         }
       }
     }
   }
   .left {
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+  .active {
+    background-color: var(--green_0-5);
+    color: var(--green);
+    padding: 10px 25px;
+  }
     li {
       border: 1px solid var(--blur2);
-      margin: 2px;
-      margin: 5px;
+      margin: 10px 0;
+      border-radius: 5px;
       &:hover {
-        box-shadow: 0 0 10px silver;
+        box-shadow: 0 0 10px var(--blur2);
       }
       a {
         padding: 5px 10px;
@@ -89,25 +135,17 @@ export const Content = styled.div`
         align-items: center;
       }
     }
+    .phone-number {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   .blur-text {
     color: var(--blur);
     span {
       color: var(--secondary-color);
     }
-  }
-  button {
-    outline: none;
-    border: none;
-    padding: 10px 15px;
-    background-color: var(--secondary-color);
-    margin: 5px;
-    border-radius: 5px;
-    color: white;
-  }
-  .active {
-    background-color: var(--green_0-5);
-    color: var(--green);
   }
   .listing {
     background: var(--blur2);

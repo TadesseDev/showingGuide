@@ -22,13 +22,13 @@ html,body{
 }
 
 :root{
+  --automatic: #555B67;
   --primary-color: #f5f6fa;
   --secondary-color: #2e6ef6;
   --blur: #838181;
   --blur2: #d3cdcd75;
   --green: #5EB182;
   --green_0-5: #42a3872b;
-
 }
 
     ul {
@@ -41,6 +41,15 @@ a{
   color: black;
 }
 
+  button {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+  }
         .icon {
           width: 20px;
           margin: 5px;

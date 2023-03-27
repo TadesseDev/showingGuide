@@ -17,9 +17,9 @@ export default function TopNavigation() {
         <span className="back">
           <img src={arrow_back} alt="go back" />
         </span>
-        <p>
+        <h4>
           2218 Thornridge Cir.. <strong>E5579076 </strong>
-        </p>
+        </h4>
       </div>
       <div id="profile">
         <span id="notification">
