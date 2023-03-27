@@ -50,6 +50,10 @@ a{
     border-radius: 5px;
     color: white;
   }
+  .arrange-vertical{
+        display: flex;
+    align-items: center;
+  }
         .icon {
           width: 20px;
           margin: 5px;

@@ -16,12 +16,19 @@ export default function Main() {
     my_note,
     turkey,
     sms,
+
     $1_176_sq_ft,
     $1_963_sq_ft,
     $2_bathrooms,
     $2_garage,
     $3_bedrooms,
     apartment,
+
+    demographics,
+    key_facts,
+    Points_of_interest,
+    property_history,
+    shortcuts,
   } = useContext(iconsContext);
   return (
     <MainComponent>
@@ -154,35 +161,35 @@ export default function Main() {
               <ul>
                 <li>
                   <span>tax</span>
-                  <span>$1,340 / 2022</span>
+                  <strong>$1,340 / 2022</strong>
                 </li>
                 <li>
                   <span>Type</span>
-                  <span>Single-Family</span>
+                  <strong>Single-Family</strong>
                 </li>
                 <li>
                   <span>Building Age</span>
-                  <span>5 Year</span>
+                  <strong>5 Year</strong>
                 </li>
                 <li>
                   <span>Size</span>
-                  <span>1500 - 2000 feet2</span>
+                  <strong>1500 - 2000 feet2</strong>
                 </li>
                 <li>
                   <span>Parking</span>
-                  <span>Detached 2 Garage, 6 Parking</span>
+                  <strong>Detached 2 Garage, 6 Parking</strong>
                 </li>
                 <li>
                   <span>Basement</span>
-                  <span>Unfinished</span>
+                  <strong>Unfinished</strong>
                 </li>
                 <li>
                   <span>MLS#</span>
-                  <span>E5579076</span>
+                  <strong>E5579076</strong>
                 </li>
                 <li>
                   <span>Possession</span>
-                  <span>5 Day</span>
+                  <strong>5 Day</strong>
                 </li>
               </ul>
               <h4>Description</h4>
@@ -195,7 +202,60 @@ export default function Main() {
             </ul>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="shortcut">
+            <strong>Shortcut</strong>
+            <img src={shortcuts} alt="next " className="Shortcuts " />
+          </div>
+          <div className="notify-me">
+            <strong>Notify similar property</strong>
+            <div class="toggler">
+              <div className="circle"></div>
+            </div>
+          </div>
+          <ul>
+            <li class="active">
+              <a href="/">
+                <img
+                  src={key_facts}
+                  alt="key facts"
+                  className="Shortcuts  icon"
+                />
+                <span>Key Facts</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img
+                  src={property_history}
+                  alt="Property History"
+                  className="Shortcuts icon"
+                />
+                <span>Property History</span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img
+                  src={demographics}
+                  alt="Property History"
+                  className="Shortcuts icon"
+                />
+                <span>Demographics </span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img
+                  src={Points_of_interest}
+                  alt="Property History"
+                  className="Shortcuts icon"
+                />
+                <span>Points of interest</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </Content>
 
       <Content></Content>

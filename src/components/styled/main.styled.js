@@ -47,6 +47,7 @@ export const Content = styled.div`
     padding: 10px;
     background-color: #ffffff;
     border-radius: 5px;
+    height: max-content;
   }
 
   .middle {
@@ -117,11 +118,11 @@ export const Content = styled.div`
       display: flex;
       justify-content: space-around;
     }
-  .active {
-    background-color: var(--green_0-5);
-    color: var(--green);
-    padding: 10px 25px;
-  }
+    .active {
+      background-color: var(--green_0-5);
+      color: var(--green);
+      padding: 10px 25px;
+    }
     li {
       border: 1px solid var(--blur2);
       margin: 10px 0;
@@ -159,6 +160,60 @@ export const Content = styled.div`
     span {
       display: inline-flex;
       align-items: center;
+    }
+  }
+  .right {
+    .shortcut,
+    .notify-me {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-radius: 5px;
+    }
+    .notify-me {
+      background: var(--blur2);
+      padding: 20px 10px;
+    }
+    .toggler {
+      width: 40px;
+      height: 20px;
+      background: var(--blur2);
+      border-radius: 40%;
+      display: flex;
+      align-items: center;
+      padding: 2px;
+      .circle {
+        height: 15px;
+        width: 15px;
+        background: white;
+        border-radius: 50%;
+      }
+    }
+    ul {
+      li {
+        border: 1px solid var(--blur2);
+        margin: 10px 0;
+        border-radius: 5px;
+        &:hover {
+          box-shadow: 0 0 10px var(--blur2);
+        }
+        a {
+          padding: 5px 10px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .icon{
+            width: 15px;
+          }
+        }
+      }
+    }
+    li.active {
+      background-color: var(--secondary-color);
+      a {
+        color: #ffffff;
+      }
     }
   }
 `;

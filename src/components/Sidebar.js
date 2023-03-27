@@ -72,7 +72,7 @@ export default function SideBar() {
           <a href="/">Need Help?</a>
         </div>
         <div>
-          <a href="/">
+          <a href="/" className="arrange-vertical">
             <img src={help_desk} alt="Help Desk" className="icon" /> Help Desk
           </a>
         </div>

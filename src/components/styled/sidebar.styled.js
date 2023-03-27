@@ -3,29 +3,25 @@ import styled from "styled-components";
 const SidebarComponent = styled.div`
   min-width: max-content;
   background-color: white;
-  padding: 5vh 5px;
+  padding: 5vh 2vw;
   height: max-content;
   #content-container {
-    margin-left: 5px;
-    padding: 5px;
+    margin-left: 5px 0;
+    padding: 5px 0;
     ul {
       li {
         &:hover {
           box-shadow: 0 0 10px var(--blur2);
         }
         a {
-          padding: 10px;
-          margin: 5px;
+          padding: 10px 0;
+          margin: 5px 0;
           display: flex;
           align-items: center;
         }
       }
       margin-bottom: 15vh;
     }
-  }
-  #top-sidebar {
-    max-width: 80%;
-    margin: auto;
   }
   #bar {
     height: 40px;
@@ -37,6 +33,11 @@ const SidebarComponent = styled.div`
     width: 40px;
     img {
       width: 100%;
+    }
+  }
+  .arrange-vertical{
+    .icon{
+      margin-left 0;
     }
   }
 `;

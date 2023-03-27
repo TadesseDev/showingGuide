@@ -30,6 +30,13 @@ import $2_garage from "../resources/images/2_garage.svg";
 import $3_bedrooms from "../resources/images/3_bedrooms.svg";
 import apartment from "../resources/images/apartment.svg";
 
+import demographics from "../resources/images/demographics.svg";
+import key_facts from "../resources/images/key_facts.svg";
+import Points_of_interest from "../resources/images/Points_of_interest.svg";
+import property_history from "../resources/images/property_history.svg";
+import shortcuts from "../resources/images/Shortcuts.svg";
+import toggle_off from "../resources/images/toggle_off.svg";
+
 const IconsContainer = createContext();
 export const icons = {
   sidebar_icon,
@@ -62,5 +69,12 @@ export const icons = {
   $2_garage,
   $3_bedrooms,
   apartment,
+
+  demographics,
+  key_facts,
+  Points_of_interest,
+  property_history,
+  shortcuts,
+  toggle_off,
 };
 export default IconsContainer;
