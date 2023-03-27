@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import MainComponent, { Carousels, Content } from "./styled/main.styled";
 import TopNavigation from "./TopNavigation";
 import iconsContext from "../context/iconsContext";
@@ -6,7 +6,23 @@ import picture_1 from "../resources/images/pictures/picture_1.png";
 import picture_2 from "../resources/images/pictures/picture_2.png";
 import picture_3 from "../resources/images/pictures/picture_3.png";
 export default function Main() {
-  const pictures = [picture_1, picture_2, picture_3];
+  const scroll_left_by = () => {
+    const carousel = document.getElementById("carousel");
+    carousel.scrollLeft -= carousel.getElementsByTagName("img")[0].width;
+  };
+  const scroll_right_by = () => {
+    const carousel = document.getElementById("carousel");
+    carousel.scrollLeft += carousel.getElementsByTagName("img")[0].width;
+  };
+
+  const pictures = [
+    picture_1,
+    picture_2,
+    picture_3,
+    picture_1,
+    picture_2,
+    picture_3,
+  ];
   const {
     arrow_back,
     arrow_next,
@@ -33,18 +49,33 @@ export default function Main() {
   return (
     <MainComponent>
       <TopNavigation />
-      <Carousels>
-        {pictures.map((picture, index) => (
-          <img src={picture} alt={"picture_ " + index} key={index} />
-        ))}
+      <div id="carousel-container">
+        <Carousels id="carousel">
+          {pictures.map((picture, index) => (
+            <img
+              src={picture}
+              alt={"picture_ " + index}
+              key={index}
+              loading="lazy"
+            />
+          ))}
 
-        <img
-          src={arrow_back}
-          alt="Previous"
-          className="previous-picture arrow"
-        />
-        <img src={arrow_next} alt="next " className="next-picture arrow" />
-      </Carousels>
+          <img
+            src={arrow_back}
+            alt="Previous"
+            className="previous-picture arrow"
+            id="previous_image"
+            onClick={() => scroll_left_by()}
+          />
+          <img
+            src={arrow_next}
+            alt="next "
+            className="next-picture arrow"
+            id="next_image"
+            onClick={() => scroll_right_by()}
+          />
+        </Carousels>
+      </div>
       <Content>
         <div className="left">
           <div className="buttons">

@@ -4,6 +4,9 @@ const MainComponent = styled.div`
   padding: 2vw 0;
   flex-grow: 1;
   max-width: fill-available;
+  #carousel-container {
+    position: relative;
+  }
 `;
 export const Carousels = styled.div`
   margin: 20px 0;
@@ -11,7 +14,6 @@ export const Carousels = styled.div`
   overflow: scroll;
   height: 20vw;
   max-height: 400px;
-  position: relative;
   img {
     height: 100%;
     margin: 0 10px;

@@ -5,6 +5,7 @@ const SidebarComponent = styled.div`
   background-color: white;
   padding: 5vh 2vw;
   height: max-content;
+  min-height: 80vh;
   #content-container {
     margin-left: 5px 0;
     padding: 5px 0;
@@ -20,8 +21,8 @@ const SidebarComponent = styled.div`
           align-items: center;
         }
       }
-      margin-bottom: 15vh;
     }
+    margin-bottom: 100%;
   }
   #bar {
     height: 40px;
