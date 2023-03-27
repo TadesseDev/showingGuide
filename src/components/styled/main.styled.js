@@ -182,19 +182,19 @@ export const Content = styled.div`
       height: 20px;
       background: var(--blur2);
       border-radius: 40%;
-      display: flex;
-      align-items: center;
       padding: 2px;
       .circle {
-        height: 15px;
-        width: 15px;
+        height: 14px;
+        width: 14px;
+        margin-top: 3px;
         background: white;
         border-radius: 50%;
       }
       &.on {
         background: var(--green);
         .circle {
-          margin-left: 10px;
+          margin-left: 100%;
+          transform: translateX(-100%);
         }
       }
     }
