@@ -191,6 +191,12 @@ export const Content = styled.div`
         background: white;
         border-radius: 50%;
       }
+      &.on {
+        background: var(--green);
+        .circle {
+          margin-left: 10px;
+        }
+      }
     }
     ul {
       li {
@@ -205,7 +211,7 @@ export const Content = styled.div`
           display: flex;
           align-items: center;
           gap: 5px;
-          .icon{
+          .icon {
             width: 15px;
           }
         }

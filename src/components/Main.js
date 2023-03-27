@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import MainComponent, { Carousels, Content } from "./styled/main.styled";
 import TopNavigation from "./TopNavigation";
 import iconsContext from "../context/iconsContext";
@@ -6,6 +6,7 @@ import picture_1 from "../resources/images/pictures/picture_1.png";
 import picture_2 from "../resources/images/pictures/picture_2.png";
 import picture_3 from "../resources/images/pictures/picture_3.png";
 export default function Main() {
+  const [toggle, setToggle] = useState(false);
   const scroll_left_by = () => {
     const carousel = document.getElementById("carousel");
     carousel.scrollLeft -= carousel.getElementsByTagName("img")[0].width;
@@ -14,7 +15,16 @@ export default function Main() {
     const carousel = document.getElementById("carousel");
     carousel.scrollLeft += carousel.getElementsByTagName("img")[0].width;
   };
-
+  const toggler = (e) => {
+    const toggle_icon = document.getElementsByClassName("toggler")[0];
+    setToggle((toggle) => {
+      toggle = !toggle;
+      toggle
+        ? toggle_icon.classList.add("on")
+        : toggle_icon.classList.remove("on");
+      return toggle;
+    });
+  };
   const pictures = [
     picture_1,
     picture_2,
@@ -240,7 +250,7 @@ export default function Main() {
           </div>
           <div className="notify-me">
             <strong>Notify similar property</strong>
-            <div class="toggler">
+            <div class="toggler" onClick={(e) => toggler(e)}>
               <div className="circle"></div>
             </div>
           </div>
