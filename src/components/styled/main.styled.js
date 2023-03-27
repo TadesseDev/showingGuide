@@ -142,6 +142,9 @@ export const Content = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .icon {
+        margin-left: 0;
+      }
     }
   }
   .blur-text {
